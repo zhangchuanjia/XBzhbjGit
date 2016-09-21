@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    <!--Three normal dot and a red dot at the screen bottom.-->
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@id/viewpager"
+        android:layout_marginBottom="50dp">
+        <!--Three normal dot.-->
+        <LinearLayout
+            android:id="@+id/ll_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+           <!-- <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/dot_normal"/>
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/dot_normal"/>
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/dot_normal"/>-->
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/red_dot"
+            android:layout_alignParentBottom="true"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/dot_red"
+            />
+
+    </RelativeLayout>
+    <!-- android:id="@+id/btn_start"-->
+    <Button
+        android:id="@+id/btn_start"
+        android:visibility="gone"
+        android:paddingRight="30dp"
+        android:textSize="18sp"
+        android:paddingLeft="30dp"
+        android:textColor="@color/button_text_color"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_red"
+        android:text="开始体验"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

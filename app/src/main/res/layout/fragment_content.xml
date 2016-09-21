@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#330000ff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this is a zhueye ----FRAGMENT"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:checked="true"
+            style="@style/BottomTabBarStyle"
+            android:drawableTop="@drawable/home_selector"
+            android:text="首页"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_news"
+            style="@style/BottomTabBarStyle"
+            android:drawableTop="@drawable/new_selector"
+            android:text="新闻中心"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_ss"
+            style="@style/BottomTabBarStyle"
+            android:drawableTop="@drawable/ss_selector"
+            android:text="智慧服务"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_gov"
+            style="@style/BottomTabBarStyle"
+            android:checked="false"
+            android:drawableTop="@drawable/gov_selector"
+            android:text="政务"/>
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/BottomTabBarStyle"
+            android:drawableTop="@drawable/setting_selector"
+            android:text="设置"
+            />
+    </RadioGroup>
+
+    <com.xiangbei.zhbj.xbzhbj.view.NoScrollViewPager
+        android:id="@+id/content_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radio_group">
+
+    </com.xiangbei.zhbj.xbzhbj.view.NoScrollViewPager>
+
+</RelativeLayout>

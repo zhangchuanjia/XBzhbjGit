@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#66ff0000"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="this is a menu"/>
+
+    <!--这是主页的内容布局，这里挖了一个容器，但是具体显示什么内容，现在还不知道。一会
+   在代码里面使用fragment嵌入进来显示-->
+    <FrameLayout
+        android:id="@+id/fl_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>
